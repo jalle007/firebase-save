@@ -1,7 +1,7 @@
 package net.simplifiedcoding.firebaseexample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,9 +11,6 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 person.setAddress(address);
 
                 //Storing values to firebase
-                ref.child("Person").setValue(person);
+                ref.child("Person1").setValue(person);
 
 
                 //Value event listener for realtime data update
